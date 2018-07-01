@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 /* TODO display toast with score*/
     public void displayResult(int score) {
         String marks = "You scored " + score;
-        marks += " out of 5";
+        marks += " out of 6";
         marks += "\ncheck out the correct answers!";
         Toast toast = Toast.makeText(getApplicationContext(),marks, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
