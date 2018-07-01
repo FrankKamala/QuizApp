@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="android_quiz_app">Android Quiz App</string>
+    <string name="name_the_founder_of_android">Name the founder of Android</string>
+    <string name="image_layout">Image Layout</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="buttonlayout">ButtonLayout</string>
+    <string name="which_of_the_following_are_android_layouts">Which of the following are android Layouts ?</string>
+    <string name="question_1">Question 1</string>
+</resources>

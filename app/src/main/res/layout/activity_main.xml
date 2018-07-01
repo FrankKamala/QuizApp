@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="177dp"
+            android:layout_height="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:padding="4dp"
+            android:text="android quiz app"
+            android:textAllCaps="true"
+            android:textColor="#008000"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/textView2"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="Candidate Name"
+            android:inputType="text"
+            android:textColor="#000c00"
+            android:textColorHint="#cce5cc" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-12dp"
+            android:text="Q1. Which of the following are 2 android layouts"
+            android:textColor="#330000"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_weight="1"
+                android:text="@string/buttonlayout"
+                android:textSize="16sp"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_toRightOf="@+id/checkBox"
+                android:layout_weight="1"
+                android:text="@string/linearlayout"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_toRightOf="@+id/checkBox2"
+                android:layout_weight="1"
+                android:text="Relativelayout"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="180dp"
+            android:text="Q2. Name the founder of android"
+            android:textColor="#330000"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/plain_text_input"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="13dp"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plain_text_input"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="11dp"
+                android:text="Q3. What is AAPT?"
+                android:textColor="#330000"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:padding="13dp">
+
+                <RadioButton
+                    android:id="@+id/Q3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Android asset packaging tool."
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/Q3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Analog asset packaging test."
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="8dp"
+                android:text="Q4. What is ADB?"
+                android:textColor="#330000"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:padding="13dp">
+
+                <RadioButton
+                    android:id="@+id/Q4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Debug Bridge."
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/Q4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Android Database."
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Q5 What is ADT in Android?"
+                android:textColor="#190000"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/group5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt"
+                android:layout_marginLeft="11dp"
+                android:padding="13dp">
+
+                <RadioButton
+                    android:id="@+id/Q5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Debug Test"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/Q5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Android Development Tool."
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Q6 What are the basic tools used to develop an android app?"
+                    android:textColor="#190000"
+                    android:textSize="22sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt2"
+                    android:layout_marginLeft="11dp"
+                    android:padding="13dp">
+
+                    <RadioButton
+                        android:id="@+id/Q6a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JDK , Eclipse+ADT plugin,SDK Tools."
+                        android:textSize="17sp" />
+
+                    <RadioButton
+                        android:id="@+id/Q6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" JVM."
+                        android:textSize="17sp" />
+
+
+
+                </RadioGroup>
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffc966"
+                    android:text="Mark and Submit"
+                    android:padding="1dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+
+
